@@ -11,18 +11,18 @@
  */
 
 function sortByHeight(arr) {
-  const arrFilt = arr.filter((a) => a !== -1);
-  const arrSort = arrFilt.sort((a, b) => a - b);
-  const arr1 = [];
+  const a = arr.filter((x) => x !== -1);
+  const b = a.sort((x, y) => x - y);
+  const c = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === -1) arr1.push(-1);
+    if (arr[i] === -1) c.push(-1);
     if (arr[i] !== -1) {
-      arr1.push(arrSort[0]);
-      arrSort.shift();
+      c.push(b[0]);
+      b.shift();
     }
   }
-  return arr1;
+  return c;
 }
 
 module.exports = sortByHeight;
