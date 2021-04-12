@@ -9,6 +9,7 @@
  *
  * The result should be [-1, 150, 160, 170, -1, -1, 180, 190]
  */
+
 function sortByHeight(arr) {
   const arrFilt = arr.filter((a) => a !== -1);
   const arrSort = arrFilt.sort((a, b) => a - b);
