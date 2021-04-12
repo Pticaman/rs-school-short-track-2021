@@ -21,7 +21,6 @@ function sortByHeight(arr) {
       arrSort.shift();
     }
   }
-
   return arr1;
 }
 
